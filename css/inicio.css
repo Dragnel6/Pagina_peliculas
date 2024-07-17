@@ -1,0 +1,256 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    border: none;
+    outline: none;
+    scroll-behavior: smooth;
+    font-family: 'Cinzel', serif;
+
+}
+html{
+    font-size: 62.5%;
+    
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: #080F28;
+}
+
+/* Estilos del header */
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+}
+/* Estilos de la barra principal */
+.main-nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #141A32;
+    padding: 30px 30px;
+}
+.logo img {
+    height: 75px;
+    width: 75px;
+    display: grid;
+    position: absolute;
+    top: 1px;
+    z-index: 1;
+}
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+nav ul li {
+    margin-left: 20px;
+}
+nav ul li a {
+    color: #FFA500;
+    text-decoration: none;
+    font-size: 16px;
+    padding: 5px 10px;
+}
+nav ul li a:hover {
+    background-color: #080F28;
+    color: aqua;
+    border-radius: 5px;
+}
+
+/*Estilo del nav vertical*/
+.vertical-nav {
+    width: 130px;
+    background-color: #141A32;
+    position: fixed;
+    height: 100%;
+    top: 80px;
+    left: 0;
+    overflow-x: hidden;
+    padding-top: 20px;
+}
+.vertical-nav h2{
+    color: white;
+    font-size: 20px;
+    display: ruby-text;
+}
+h2#lanza{
+    color: white;
+    font-size:15px;
+    display: ruby-text;
+}
+.vertical-nav ul {
+    list-style-type: none;
+    padding: 0;
+    display: block;
+}
+ul#nav2 {
+    display: flex;
+    padding: 0;
+    list-style-type: none;
+    width: 80%;
+    justify-content: space-around;
+    
+}
+.vertical-nav .version{
+    display: flex;
+    flex-direction: column;
+    width: 60%;
+
+}
+
+#nav2 .version li {
+    padding: 8px 10px;
+
+}
+#nav2 .version li a {
+    padding: 0;
+    margin-left: -15px;
+}
+.vertical-nav ul li {
+    padding: 8px 10px;
+    text-align: left;
+}
+.vertical-nav ul li a {
+    color: #FFA500;
+    text-decoration: none;
+}
+
+/*Estilos del buscador*/
+section {
+    margin-top: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1em 2em;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+section#buscador{
+    margin-top: 80px;
+}
+.search-container {
+    display: flex;
+    align-items: center;
+    background-color: #1A2242; /* Color del fondo del input */
+    border-radius: 10px;
+    padding: 5px;
+    width: 70%; /* Ancho del buscador */
+}
+.search-input {
+    border: none;
+    outline: none;
+    background-color: #1A2242; /* Color del fondo del input */
+    color: white;
+    font-size: 18px;
+    flex: 1;
+    padding: 10px;
+    border-radius: 10px 0 0 10px; /* Esquinas redondeadas */
+}
+.search-button {
+    border: none;
+    background-color: #1A2242; /* Color del fondo del botón */
+    padding: 10px;
+    border-radius: 0 10px 10px 0; /* Esquinas redondeadas */
+    cursor: pointer;
+}
+.search-button:hover {
+    background-color: #2E3A66; /* Color del fondo del botón al pasar el cursor */
+}
+
+.search-icon {
+    fill: white; /* Color del ícono */
+}
+section h1{
+    margin: 0;
+    font-size: 2rem;
+    color: white;
+    font-weight: 700;
+}
+/*Estilos de las card*/
+.product-slider {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 2em;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.producto-contenedor {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 10px;
+    width: 80%;
+}
+.product-card {
+    background-color: #080F28;
+    border: 1px solid #ddd;
+    border-radius: 15px;
+    margin: 0 0.5em;
+    padding: 1em;
+    text-align: center;
+    width: 220px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    flex: 0 0 auto;
+    cursor: pointer;
+}
+.product-card:hover {
+    border: 1px solid blue;
+}
+.product-card img {
+    max-width: 100%;
+    border-radius: 15px;
+    height: auto;
+    border-bottom: 1px solid #ddd;
+    margin-bottom: 1em;
+}
+.actions {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.actions span a{
+    font-size: 20px;
+    font-weight: 400;
+    color: white;
+}
+.actions span a:hover{
+    color: blue;
+}
+/*Estilos del pie de pagina*/
+.pie-dechitas{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #141A32;
+}
+.pie-2 {
+    display: flex;
+    align-items: center;
+    width: 80%;
+}
+.pie-2 img{
+    height: 85px;
+    width: 85px;
+   margin-right: 20px;
+}
+.pie-3 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.pie-3 span{
+    color: #ddd;
+    margin: 5px 0;
+    font-size: 18px;
+}
